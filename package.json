@@ -1,0 +1,8 @@
+{
+  "name": "test-marketing-hub-monorepo",
+  "version": "1.0.0",
+  "packageManager": "pnpm@10.25.0",
+  "scripts": {
+    "qa": "pnpm --parallel --filter email-campaigns --filter designs --filter ui-marketing-hub-shell start"
+  }
+}
