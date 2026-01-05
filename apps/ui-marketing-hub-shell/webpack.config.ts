@@ -34,10 +34,10 @@ export default (env: WebpackEnv) => {
   config.plugins.push(
     new webpack.container.ModuleFederationPlugin({
       name: 'ui_marketing_hub_shell',
-      filename: 'remoteEntry.js',
+      filename: 'marketing-hub.js',
       remotes: {
-        email_campaigns: `email_campaigns@${EMAIL_CAMPAIGNS_REMOTE_URL}/remoteEntry.js`,
-        designs: `designs@${DESIGNS_REMOTE_URL}/remoteEntry.js`,
+        email_campaigns: `email_campaigns@${EMAIL_CAMPAIGNS_REMOTE_URL}/email-campaigns.js`,
+        designs: `designs@${DESIGNS_REMOTE_URL}/designs.js`,
       },
       shared: {
         ...packageJson.dependencies,

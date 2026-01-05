@@ -29,7 +29,7 @@ export default (env: WebpackEnv) => {
   config.plugins.push(
     new webpack.container.ModuleFederationPlugin({
       name: 'designs',
-      filename: 'remoteEntry.js',
+      filename: 'designs.js',
       exposes: {
         './Router': './src/router/Router.tsx',
       },

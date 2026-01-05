@@ -29,7 +29,7 @@ export default (env: WebpackEnv) => {
   config.plugins.push(
     new webpack.container.ModuleFederationPlugin({
       name: 'email_campaigns',
-      filename: 'remoteEntry.js',
+      filename: 'email-campaigns.js',
       exposes: {
         './Router': './src/router/Router.tsx',
       },
